@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "screenName": "ユーザー一覧",
+  "screenType": "list",
+  "fields": [
+    {
+      "sourceField": "user_id",
+      "label": "ユーザーID",
+      "order": 1,
+      "visible": true
+    },
+    {
+      "sourceField": "user_name",
+      "label": "氏名",
+      "order": 2,
+      "visible": true
+    },
+    {
+      "sourceField": "status_cd",
+      "label": "ステータス",
+      "order": 3,
+      "visible": true,
+      "converter": "status_cd"
+    },
+    {
+      "sourceField": "gender_cd",
+      "label": "性別",
+      "order": 4,
+      "visible": true,
+      "converter": "gender_cd"
+    }
+  ]
+}

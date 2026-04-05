@@ -1,0 +1,6 @@
+code_type,code_value,code_label
+status_cd,1,申請中
+status_cd,2,承認済
+status_cd,9,取消
+gender_cd,1,男性
+gender_cd,2,女性
