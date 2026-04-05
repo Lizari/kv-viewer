@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+
+  // Cloudflare Pages project name.
+  // If your existing Pages project uses a different name, update this value.
+  "name": "kv-viewer",
+  "compatibility_date": "2026-04-05",
+  "pages_build_output_dir": "./dist"
+}

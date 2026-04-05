@@ -25,6 +25,18 @@ pnpm dev
 > **補足**: vite-plus (`vp` コマンド) は Node.js 20.12+ が必要です。  
 > Node.js 20.11 の場合は上記の `pnpm` コマンドを使用してください。
 
+## Cloudflare Pages
+
+このプロジェクトは Cloudflare Workers ではなく、静的サイトとして Cloudflare Pages にデプロイする想定です。
+
+- Git 連携で設定する場合、build command は `pnpm build`
+- Git 連携で設定する場合、build output directory は `dist`
+- Git 連携で設定する場合、root directory は未設定のまま
+- `wrangler deploy` は Worker デプロイ用なので使わない
+- CLI で手動デプロイする場合は `npx wrangler pages deploy dist --project-name kv-viewer`
+
+リポジトリには `wrangler.jsonc` を追加してあり、Pages の出力先を `dist` に固定しています。既存の Pages プロジェクト名が `kv-viewer` 以外なら、`name` を実際のプロジェクト名に合わせて変更してください。
+
 ## 操作手順
 
 1. **入力データを用意する**
